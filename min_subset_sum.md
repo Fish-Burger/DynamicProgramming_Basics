@@ -1,4 +1,4 @@
-_**Partition a set into two subsets such that the difference of subset sums is minimum.
+_**Q) Partition a set into two subsets such that the difference of subset sums is minimum.
 Note : you have to include all the elements i.e. no elements can be excluded in the 2 different subsets whose min diff is to be found out**_
 ```java
 public class MinDiff {
@@ -14,6 +14,11 @@ public static void main(String[] args) {
 		//Returns 1 because the min diff is occuring in the subsets <11,1> and <6,5>
     }
 ```
+Note that the value of sum - this time is the value of the sum of the elements of the given array.
+
+
+<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum01.jpeg" width="500">
+
 ```java
     
     	public static int sack(int[]a,int n,int sum)
@@ -52,6 +57,6 @@ public static void main(String[] args) {
 	}
     
 ```
-<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum01.jpeg" width="500">
+
 
 
