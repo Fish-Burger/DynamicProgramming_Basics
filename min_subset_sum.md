@@ -13,6 +13,8 @@ public static void main(String[] args) {
 		System.out.println(MinDiff.sack(a,n,sum));
 		//Returns 1 because the min diff is occuring in the subsets <11,1> and <6,5>
     }
+```
+```java
     
     	public static int sack(int[]a,int n,int sum)
 	{
