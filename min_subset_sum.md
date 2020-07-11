@@ -17,7 +17,7 @@ public static void main(String[] args) {
 Note that the value of sum - this time is the value of the sum of the elements of the given array.
 
 
-<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum01.jpeg" width="500">
+<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum02.jpeg" width="500">
 
 ```java
     
