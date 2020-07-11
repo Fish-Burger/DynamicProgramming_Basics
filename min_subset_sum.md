@@ -17,13 +17,19 @@ public static void main(String[] args) {
 Note that the value of sum - this time is the value of the sum of the elements of the given array.
 
 
-<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum02.jpeg" width="500">
+<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum02.jpeg" width="800">
 
 ```java
     
     	public static int sack(int[]a,int n,int sum)
 	{
 		boolean[][] t=new boolean[n+1][sum+1];
+```
+<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum04.jpeg" width="600">
+
+<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum01.jpeg" width="550" height="400">
+
+```java
 		for(int i=0;i<sum+1;i++)
 		{
 			t[0][i]=false;
@@ -32,6 +38,7 @@ Note that the value of sum - this time is the value of the sum of the elements o
 		{
 			t[i][0]=true;
 		}
+
 		for(int i=1;i<n+1;i++)
 		{
 			for(int j=1;j<sum+1;j++)
@@ -45,6 +52,10 @@ Note that the value of sum - this time is the value of the sum of the elements o
 				}
 			}
 		}
+```
+<img src="https://github.com/Its-Ankush/DynamicProgrammingBasics/blob/master/images/min_subset_sum03.jpeg" width="600" height="400">
+
+```java
 		int mindiff=Integer.MAX_VALUE;
 		for(int i=0;i<=(sum)/2;i++)
 		{
